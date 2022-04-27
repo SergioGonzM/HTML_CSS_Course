@@ -1,0 +1,74 @@
+@import "./style.css";
+@import "./variables.css";
+
+p {
+    margin-bottom: calc(var(--space-unit));
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+.main_form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: calc(var(--space-unit) * 7);
+    max-width: 600px;
+    margin: calc(var(--space-unit) * 3) auto;
+}
+
+.mini_menu {
+    margin-top: calc(var(--space-unit)*3);
+    margin-bottom: calc(var(--space-unit)*3);
+}
+
+.center_image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#issue_form {
+  padding-top: 50px;
+  position: relative;
+}
+
+#issue_form .icon {
+  background-image: var(--main-gradiente);
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  position: absolute;
+  top: -25px;
+}
+
+#issue_form .inputs {
+  width: 100%;
+  color: var(--dark-color);
+  background-color: var(--bg-tag-color);
+  border: none;
+  padding: calc(var(--space-unit) * 1.5) calc(var(--space-unit) * 2);
+  border-radius: 8px;
+}
+
+.button_cancel {
+    background-color: var(--dark-color);
+  }
+  
+.button_delete {
+  background-color: var(--cancel-color);
+}
+
+
+
+  

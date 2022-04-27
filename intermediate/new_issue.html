@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="new_issue_styles.css">
+    <title>Issue</title>
+</head>
+<body class="main_form">
+    <aside>
+        <a href="index.html">< Go Back</a>
+    </aside>
+    <main>
+        <form class="box" id="issue_form">
+            <div class="icon center_image">
+              <img src="./assets/writing.svg" alt="pencil">
+            </div>
+      
+            <h2>Editing New Issue</h2>
+            <div class="mini_menu">
+              <h3>Issue title</h3>
+              <p>Add a short, descriptive headline</p>
+              <input type="text" name="issue_title" class="inputs" placeholder="Please add a title">
+            </div>
+
+            <div class="mini_menu">
+              <h3>Category</h3>
+              <p>Choose a category for the issue</p>
+              <select name="issue_category" class="inputs">
+                <option value="ui">UI</option>
+                <option value="ux">UX</option>
+                <option value="feature">Feature</option>
+                <option value="enhancement">Enhancement</option>
+                <option value="bug">Bug</option>
+              </select>
+            </div>
+
+            <div class="mini_menu">
+              <h3>Issue status</h3>
+              <p>Change issue state</p>
+              <select name="issue_status" class="inputs">
+                <option value="to_do">To do</option>
+                <option value="doing">Doing</option>
+                <option value="done">Done</option>
+              </select>
+            </div>
+      
+            <div class="mini_menu">
+              <h3>Issue Detail</h3>
+              <p>Include any specific comments on what should be improved, added, etc.</p>
+              <textarea name="issue_detail" cols="30" rows="10" class="inputs" placeholder="Please add a detail"></textarea>
+            </div>
+      
+            <div class="mini_menu flex-row-spb-center">
+              <button class="button button_delete">Delete</button>
+              <div>
+                <button class="button button_cancel">Cancel</button>
+                <button class="button button-primary">Add Issue</button>
+              </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
